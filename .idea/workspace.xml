@@ -31,10 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="025414cd-b207-416f-aeb0-9f19c394a5c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/shared/_user_info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -180,6 +188,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\baoshi\code\weibo2\resources\views\shared" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\baoshi\code\weibo2\resources\views\users" />
       <recent name="C:\Users\baoshi\code\weibo2\resources\views\static_pages" />
@@ -203,6 +214,14 @@
       <workItem from="1602400684226" duration="6222000" />
       <workItem from="1602468119435" duration="4487000" />
     </task>
+    <task id="LOCAL-00001" summary="查询用户">
+      <created>1602480849113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602480849113</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,27 +251,31 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="查询用户" />
+    <option name="LAST_COMMIT_MESSAGE" value="查询用户" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="930" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602401503138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="930" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1602401503138" />
-    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog" timestamp="1602464818038">
+    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog" timestamp="1602479537757">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1602464818038" />
-    <state x="1312" y="456" key="NewPhpFileDialog" timestamp="1602470852759">
+    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1602479537757" />
+    <state x="1312" y="456" key="NewPhpFileDialog" timestamp="1602481108327">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="984" y="338" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1602401858704" />
-    <state x="1312" y="456" key="NewPhpFileDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1602470852759" />
-    <state x="681" y="259" key="run.anything.popup" timestamp="1602470417100">
+    <state x="1312" y="456" key="NewPhpFileDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1602481108327" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1602481396040">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602470417100" />
-    <state x="686" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1602473287120">
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602481396040" />
+    <state x="686" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1602481399830">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="686" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602473287120" />
+    <state x="686" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602481399830" />
   </component>
 </project>

@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
+    private $attributes;
+
     public function create()
     {
         return view('users/create');
