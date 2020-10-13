@@ -33,4 +33,8 @@ Route::post('login', 'SessionsController@store')
     ->name('login');
 Route::delete('logout', 'SessionsController@destroy')
     ->name('logout');
-Route::get('/users/{user}/edit', 'UserController@edit')->name('users.edit');
+Route::get('/users/{user}/edit', 'UserController@edit')
+    ->name('users.edit');
+//邮件激活功能
+Route::get('signup/confirm/{token}', 'UserController@confirmEmail')
+    ->name('confirm_email');
