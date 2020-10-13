@@ -53,4 +53,9 @@ class User extends Authenticatable
             $user->activation_token = Str::random(10);
         });
     }
+    //一个用户关联多个文章
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
 }
