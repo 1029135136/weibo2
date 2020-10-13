@@ -18,7 +18,7 @@ class UserController extends Controller
     public function __construct()
     {
         $this->middleware('auth', [
-            'except'=>['show','create', 'store','index','confirmEmail']
+            'except' => ['show', 'create', 'store', 'index', 'confirmEmail']
         ]);
         $this->middleware('guest', [
             'only' => ['create']
@@ -34,7 +34,7 @@ class UserController extends Controller
     public function show(User $user)
     {
         $statuses = $user->statuses()->orderBy('created_at', 'desc')->paginate(30);
-        return view('users.show', compact('user','statuses'));
+        return view('users.show', compact('user', 'statuses'));
     }
 
     public function store(Request $request)
@@ -113,6 +113,20 @@ class UserController extends Controller
         Auth::login($user);
         session()->flash('success', '恭喜你，激活成功！');
         return redirect()->route('users.show', [$user]);
+    }
+
+    public function followings(User $user)
+    {
+        $users = $user->followings()->paginate(30);
+        $title = $user->name . '关注的人';
+        return view('users.show_follow', compact('users', 'title'));
+    }
+
+    public function followers(User $user)
+    {
+        $users = $user->followers()->paginate(30);
+        $title = $user->name . '的粉丝';
+        return view('users.show_follow', compact('users', 'title'));
     }
 
 }
