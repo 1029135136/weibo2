@@ -33,4 +33,9 @@ class UserPolicy
     {
         return $currentUser->id !== $user->id;
     }
+
+    public function scoreEdit(User $currentUser, User $user)
+    {
+        return $currentUser->id !== $user->id;
+    }
 }

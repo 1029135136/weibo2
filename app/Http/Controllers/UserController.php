@@ -129,4 +129,24 @@ class UserController extends Controller
         return view('users.show_follow', compact('users', 'title'));
     }
 
+    public function scoreEdit(Request $request)
+    {
+        $user = User::find($request->id);
+        $this->authorize('scoreEdit', $user);
+        $score = $request->score;
+        $currentUser = Auth::user();
+        $currentUser_score = $currentUser->score;
+        $user_score = $user->score;
+        if ($currentUser_score-$score>0) {
+            $currentUser_score = $currentUser_score - $score;
+            $user_score = $user_score + $score;
+            $currentUser->update(['score'=>$currentUser_score]);
+            $user->update(['score'=>$user_score]);
+            session()->flash('success','分数修改成功');
+            return redirect()->back();
+        } else {
+            session()->flash('fail','分数修改失败，当前用户分数不足以执行该操作');
+        }
+    }
+
 }

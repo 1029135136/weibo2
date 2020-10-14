@@ -60,3 +60,6 @@ Route::post('/users/followers/{user}', 'FollowersController@store')
     ->name('followers.store');
 Route::delete('/users/followers/{user}', 'FollowersController@destroy')
     ->name('followers.destroy');
+#修改分数
+Route::post('/users/scoreEdit', 'UserController@scoreEdit')
+    ->name('users.scoreEdit');

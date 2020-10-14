@@ -6,7 +6,7 @@
 </head>
 <body>
 @include('layouts._header')
-<div class="container">
+<div class="container" id="app">
   <div class="offset-md-1 col-md-10">
     @include('shared._messages')
     @yield('content')
@@ -14,5 +14,6 @@
   </div>
 </div>
 <script src="{{mix('js/app.js')}}"></script>
+@yield('lastScript')
 </body>
 </html>

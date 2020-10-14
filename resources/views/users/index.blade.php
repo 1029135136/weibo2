@@ -14,3 +14,7 @@
     </div>
   </div>
 @stop
+
+@section('lastScript')
+
+@endsection
